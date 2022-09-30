@@ -9,13 +9,12 @@ authors = [
 # Requirements
 [tool.poetry.dependencies]
 python = "^3.8"
-
-
-[tool.poetry.dev-dependencies]
 pandas = "^1.1.4"
 numpy = "^1.19.1"
 openpyxl = "*"
 folium = { git = "https://github.com/python-visualization/folium.git", rev = "551b2420" }
+
+[tool.poetry.dev-dependencies]
 ipykernel = "^6"
 isort = ">=5.8"
 black = "*"
