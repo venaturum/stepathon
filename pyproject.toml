@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "stepathon"
+version = "0.1.0"
+description = "Stepathon fun"
+authors = [
+	"Riley <venaturum@gmail.com>",
+]
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.dev-dependencies]
+pandas = "^1.1.4"
+numpy = "^1.19.1"
+openpyxl = "*"
+folium = { git = "https://github.com/python-visualization/folium.git", rev = "551b2420" }
+ipykernel = "^6"
+isort = ">=5.8"
+black = "*"
+flake8 = ">=3.9"
+
+[[tool.poetry.source]]
+name = 'default'
+url = 'https://pypi.python.org/simple'
+default = true
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"

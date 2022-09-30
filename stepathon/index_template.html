@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>HVCCC Stepathon Maps</h1>
+    <ul>
+        {% for person in persons -%}
+        <li><a href="{{ person.url }}"">{{ person.name }}</a></li>
+    {% endfor %}
+    </ul>
+</html>
