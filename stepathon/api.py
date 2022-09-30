@@ -50,7 +50,11 @@ def maps_from_plot_data(plot_data_csv, all_maps=False, output_directory="./maps"
 
 
 def maps_from_coords_and_steps(
-    step_data_xlsx, coords_csv=None, all_maps=False, output_directory="./maps"
+    step_data_xlsx,
+    coords_csv=None,
+    all_maps=False,
+    output_directory="./maps",
+    steps_per_km=472500 / 363,
 ):
     """Will create a folder of html files
 
@@ -69,7 +73,6 @@ def maps_from_coords_and_steps(
     output_directory : str, optional
         Path to where the html files should be stored, by default "./maps"
     """
-    steps_per_km = 472500 / 363
     steps, group = read_steps(step_data_xlsx)
     if coords_csv is None:
         coords = default_coords().to_numpy()
