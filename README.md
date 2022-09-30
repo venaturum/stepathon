@@ -19,3 +19,5 @@ In python:
     maps_from_coords_and_steps(r"./downloads/stepathon_test_data.xlsx", all_maps=True)
 
 This will create a folder of html files.
+
+Type `help(maps_from_coords_and_steps)` for more options.
