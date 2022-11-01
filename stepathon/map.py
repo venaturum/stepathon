@@ -27,7 +27,7 @@ def create_geojson_features(plot_data, highlight=None):
             "properties": {
                 "name": row.name,
                 "tooltip": f"{row.name}: {int(row.steps):,}",
-                "time": row.datetime,
+                "time": str(row.datetime),
                 "style": {"color": ""},
                 "icon": "circle",
                 "iconstyle": {
