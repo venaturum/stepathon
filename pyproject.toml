@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stepathon"
-version = "0.1.0"
+version = "0.1.1"
 description = "Stepathon fun"
 authors = [
 	"Riley <venaturum@gmail.com>",
