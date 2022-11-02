@@ -8,7 +8,7 @@ To install into a virtual environment:
 
     python -m venv .venv
     .venv/Scripts/activate
-    pip install git+https://github.com/venaturum/stepathon.git
+    pip install git+https://github.com/venaturum/stepathon.git --upgrade
  
 ## Usage
 
